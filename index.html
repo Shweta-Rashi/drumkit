@@ -2,8 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Playing Drums</title>
     <link rel="stylesheet" href="drum.css">
 </head>
@@ -72,11 +70,16 @@ const key = document.querySelector(`.key[data-key = "${e.keyCode}"]`);
    // key.classList.remove('playing') 
    // key.classList.toggle('playing')
 }
-function removeTransition(e){
-    if(e.propertyName !== 'transform');  //skip if not a transform
-    return;
-    this.classList.remove('playing'); 
-}
+//function removeTransition(e){
+  //  if(e.propertyName !== 'transform');  //skip if not a transform
+    //return;
+    //this.classList.remove('playing'); 
+//}
+    const removeTransition = function (e) {
+        if (e.propertyName !== 'transform') //skip if not a transform
+            return
+        this.classList.remove('playing')
+    }
 //select every key on the page to listen on each one
 const keys = document.querySelectorAll('.key');
     keys.forEach(key => key.addEventListener('transitionend', removeTransition));
