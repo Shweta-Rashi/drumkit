@@ -51,6 +51,16 @@ kbd{
     color: #5a0909e6;
     font-weight: bold;
   }
+footer{
+    background: grey;
+    padding: 1rem;
+}
+footer div{
+    text-align: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: whitesmoke;
 
+}
 
 
