@@ -10,7 +10,6 @@ html{
     /* background-repeat: no-repeat;
     background-position: center; */
 }
-
 .keys{
     display: flex;
     flex: 1;
@@ -62,5 +61,7 @@ footer div{
     color: whitesmoke;
 
 }
+
+
 
 
